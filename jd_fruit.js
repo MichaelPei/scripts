@@ -1279,7 +1279,7 @@ function requireConfig() {
       })
       if (process.env.JD_DEBUG && process.env.JD_DEBUG === 'false') console.log = () => {};
     } else {
-      cookiesArr.push(...JSON.parse($.getdata('CookiesJD') || '[]'));
+      cookiesArr.push(...$.getdata('CookiesJD'));
     }
     console.log(`共${cookiesArr.length}个京东账号\n 内容:${cookiesArr}\n`)
     if ($.isNode()) {
