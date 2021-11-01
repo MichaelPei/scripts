@@ -1281,7 +1281,7 @@ function requireConfig() {
     } else {
       cookiesArr.push(...[$.getdata('CookieJD'), $.getdata('CookieJD2')]);
     }
-    console.log(`共${cookiesArr.length}个京东账号\n`)
+    console.log(`共${cookiesArr.length}个京东账号\n ${cookiesArr}\n`)
     if ($.isNode()) {
       Object.keys(jdFruitShareCodes).forEach((item) => {
         if (jdFruitShareCodes[item]) {
